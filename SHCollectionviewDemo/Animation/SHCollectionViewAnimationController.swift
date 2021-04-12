@@ -17,7 +17,7 @@ class SHCollectionViewAnimationController: UIViewController, UICollectionViewDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: layout)
+        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "com.sh.demo")
         collectionView.backgroundColor = UIColor.white
         collectionView.alwaysBounceVertical = true
@@ -28,6 +28,11 @@ class SHCollectionViewAnimationController: UIViewController, UICollectionViewDel
         let deleteBtn : UIBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.trash, target: self, action: #selector(deleteItem))
         let addBtn : UIBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addItem))
         self.navigationItem.rightBarButtonItems = [deleteBtn,addBtn]
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = self.view.bounds
     }
 
     // MARK: - -- UICollectionViewDataSource

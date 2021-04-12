@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7759295226203215005722BE /* SHCollectionViewDecorationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759295126203215005722BE /* SHCollectionViewDecorationLayout.swift */; };
+		7759295626203362005722BE /* BookshelfDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759295526203362005722BE /* BookshelfDecorationView.swift */; };
+		775929592620377E005722BE /* SHBookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775929582620377E005722BE /* SHBookshelfViewController.swift */; };
 		8A642C1024C68752002E99F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A642C0F24C68752002E99F4 /* AppDelegate.swift */; };
 		8A642C1224C68752002E99F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A642C1124C68752002E99F4 /* SceneDelegate.swift */; };
 		8A642C1424C68752002E99F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A642C1324C68752002E99F4 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7759295126203215005722BE /* SHCollectionViewDecorationLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCollectionViewDecorationLayout.swift; sourceTree = "<group>"; };
+		7759295526203362005722BE /* BookshelfDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfDecorationView.swift; sourceTree = "<group>"; };
+		775929582620377E005722BE /* SHBookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHBookshelfViewController.swift; sourceTree = "<group>"; };
 		8A642C0C24C68752002E99F4 /* SHCollectionviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHCollectionviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A642C0F24C68752002E99F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A642C1124C68752002E99F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7759295026202DE3005722BE /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				7759295126203215005722BE /* SHCollectionViewDecorationLayout.swift */,
+				7759295526203362005722BE /* BookshelfDecorationView.swift */,
+				775929582620377E005722BE /* SHBookshelfViewController.swift */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
 		8A642C0324C68752002E99F4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +76,7 @@
 		8A642C0E24C68752002E99F4 /* SHCollectionviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7759295026202DE3005722BE /* Bookshelf */,
 				8A642C2824C81161002E99F4 /* Animation */,
 				8A642C0F24C68752002E99F4 /* AppDelegate.swift */,
 				8A642C1124C68752002E99F4 /* SceneDelegate.swift */,
@@ -153,10 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A642C1424C68752002E99F4 /* ViewController.swift in Sources */,
+				775929592620377E005722BE /* SHBookshelfViewController.swift in Sources */,
 				8A642C1024C68752002E99F4 /* AppDelegate.swift in Sources */,
 				8A642C1224C68752002E99F4 /* SceneDelegate.swift in Sources */,
 				8A642C2724C690E3002E99F4 /* SHCollectionViewAnimationLayout.swift in Sources */,
+				7759295626203362005722BE /* BookshelfDecorationView.swift in Sources */,
 				8A642C2A24C81196002E99F4 /* SHCollectionViewAnimationController.swift in Sources */,
+				7759295226203215005722BE /* SHCollectionViewDecorationLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCWL597HJ7;
+				DEVELOPMENT_TEAM = ZPTFQ327BB;
 				INFOPLIST_FILE = SHCollectionviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
